@@ -13,10 +13,9 @@
                
               </li>
             </ul>
-          
-              <li>
+            <ul class="navbar-nav navbar-nav-right">
                 <x-app-layout>
                 </x-app-layout>
-              </li>
+             
           </div>
         </nav>

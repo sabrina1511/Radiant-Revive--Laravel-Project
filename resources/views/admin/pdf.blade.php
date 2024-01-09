@@ -34,7 +34,7 @@
        Product Price :<h3>{{ $order->price }}</h3>
        Product Quantity :<h3>{{ $order->quantity }}</h3>
        Payment Status :<h3>{{ $order->payment_status }}</h3>
-       Purchasing Date :<h3>{{ $order->created_at }}</h3>
+       Purchasing Date :<h3>{{ $order->created_at->format('d-m-Y') }}</h3>
    
        <br>
 

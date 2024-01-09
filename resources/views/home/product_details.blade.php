@@ -22,11 +22,7 @@
       <!-- responsive style -->
       <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
 
-
-   
-      
-      
-      </style>
+    
    </head>
    <body>
       <div class="hero_area">
@@ -46,7 +42,7 @@
 
          </div>
        @endif
-                     <div class="img-box" >
+                     <div class="img-box" style="padding: 20px" >
                         <img height="300" width="300" src="/product/{{$product->image}}" alt="">
                      </div>
                      <div class="detail-box">
@@ -80,6 +76,12 @@
                        <h6>Product Category : {{$product->category}}</h6>
                        <h6>Product Details : {{$product->description}}</h6>
                        <h6>Available Quantity : {{$product->quantity}}</h6>
+                            
+                              @if($product->quantity > 0)
+                              <label class="badge badge-success">In Stock</label>
+                              @else
+                              <label class="badge badge-danger">Out of Stock</label>
+                              @endif
                        <br>
                        <form action="{{url('add_cart' ,$product->id)}}" method="POST">
 

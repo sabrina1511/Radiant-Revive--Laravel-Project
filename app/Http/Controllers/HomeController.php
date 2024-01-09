@@ -128,6 +128,8 @@ class HomeController extends Controller
                         $cart->save();
             
                 }
+
+              
     
     
                 return redirect()->back()->with('message','Product Add to Cart successfully');;

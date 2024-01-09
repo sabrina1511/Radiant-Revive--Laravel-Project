@@ -80,7 +80,7 @@
 
                 <tr>
                     <td>{{$order->id}}</td>
-                    <td>{{$order->created_at}}</td>
+                    <td>{{$order->created_at->format('d-m-Y')}}</td>
                     <td>{{$order->product_title}}</td>
                     <td>{{$order->quantity}}</td>
                     <td>{{$order->price}}</td>

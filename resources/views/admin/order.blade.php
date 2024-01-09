@@ -98,7 +98,7 @@
                 
                 <td>{{$order->user_id}}</td>
                 <td>{{$order->id}}</td>
-                <td>{{$order->updated_at}}</td>
+                <td>{{$order->updated_at->format('d-m-Y')}}</td>
                 <td>{{$order->name}}</td>
                 <td>{{$order->email}}</td>
                 <td>{{$order->address}}</td>
@@ -117,7 +117,7 @@
                 <td>
                     @if($order->delivery_status=='processing')
                     
-                    <a class="btn btn-primary" onclick="return confirm('Are you sure this product is delivered??')" href="{{url('delivered',$order->id)}}">Delivered</a>
+                    <a class="btn btn-primary" onclick="return confirm('Are you sure this product is delivered??')" href="{{url('delivered',$order->id)}}">Processing</a>
                    
                     @else
                     
