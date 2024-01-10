@@ -94,6 +94,6 @@ route::get('/products',[HomeController::class, 'product']);
 
 route::get('/search_product',[HomeController::class, 'search_product']);
 
-route::get('/print_pdf/{id}',[AdminController::class, 'print_pdf']);
+route::get('/print_pdf/{id}',[HomeController::class, 'print_pdf']);
 
 

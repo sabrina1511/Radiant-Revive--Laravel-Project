@@ -134,7 +134,7 @@
                     <td>{{ $order->product_title }}</td>
                     <td>{{ $order->price }}</td>
                     <td>{{ $order->quantity }}</td>
-                    <td>{{ $order->price * $order->quantity }}</td>
+                    <td>{{ $order->price }}</td>
                 </tr>
                 <tr>
                     <td colspan="3" class="text-right">Sub Total</td>
