@@ -75,7 +75,7 @@
                       @endif
                        <h6>Product Category : {{$product->category}}</h6>
                        <h6>Product Details : {{$product->description}}</h6>
-                       <h6>Available Quantity : {{$product->quantity}}</h6>
+                       {{-- <h6>Available Quantity : {{$product->quantity}}</h6> --}}
                             
                               @if($product->quantity > 0)
                               <label class="badge badge-success">In Stock</label>
